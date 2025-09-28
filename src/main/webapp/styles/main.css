@@ -1,0 +1,225 @@
+/* ===== Reset nhẹ ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Body & Layout ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4d3d52;
+    background: linear-gradient(135deg, #ffeaf7, #f3e8ff);
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 1.5em;
+}
+
+/* ===== Headings ===== */
+h1,
+h2 {
+    color: #9c6fb3;
+    font-weight: 700;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.3em;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    font-size: 1em;
+    margin-bottom: 1em;
+    color: #6b5a6e;
+}
+
+/* ===== Thông báo ===== */
+c\\:if {
+    display: block;
+    background: linear-gradient(135deg, #ffd6ec, #e6d0ff);
+    color: #5b3b6f;
+    font-weight: 600;
+    font-size: 1.05em;
+    padding: 1em 1.5em;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(156, 111, 179, 0.15);
+    margin-bottom: 1.5em;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+c\\:if:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(156, 111, 179, 0.25);
+}
+
+/* ===== Album Links ===== */
+p a {
+    display: block;
+    color: #a05fc1;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.9em 1.2em;
+    margin: 0.6em 0;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 3px 10px rgba(160, 95, 193, 0.1);
+    transition: all 0.3s ease;
+}
+
+p a:hover {
+    color: #fff;
+    background: linear-gradient(135deg, #cfa2e0, #f6b0d8);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(207, 162, 224, 0.3);
+}
+
+/* ===== Form ===== */
+form {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 18px;
+    box-shadow: 0 3px 10px rgba(160, 95, 193, 0.1);
+    margin-bottom: 2em;
+}
+
+label {
+    display: inline-block;
+    width: 130px;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    color: #9c6fb3;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 140px);
+    padding: 0.6em;
+    margin-bottom: 0.8em;
+    border: 1px solid #e0cfe9;
+    border-radius: 10px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #cfa2e0;
+    box-shadow: 0 0 6px rgba(207, 162, 224, 0.4);
+    outline: none;
+}
+
+/* ===== Buttons ===== */
+input[type="submit"],
+button {
+    background: linear-gradient(135deg, #d6a8f2, #f7b7d9);
+    color: white;
+    border: none;
+    padding: 0.7em 1.4em;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background: linear-gradient(135deg, #be90e1, #f291c3);
+    transform: translateY(-2px);
+}
+
+/* ===== Table (Playlist style) ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 3px 8px rgba(160, 95, 193, 0.12);
+    margin-bottom: 1.5em;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid #f0e2f8;
+    padding: 0.85em;
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(135deg, #d6a8f2, #f7b7d9);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+    background-color: #fbf4ff;
+}
+
+tr:hover {
+    background-color: #fbeeff;
+}
+
+/* ===== Album Card Style ===== */
+.album-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(160, 95, 193, 0.12);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1em 0;
+}
+
+.album-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(160, 95, 193, 0.25);
+}
+
+.album-cover {
+    width: 100%;
+    display: block;
+}
+
+.album-info {
+    padding: 1em;
+}
+
+.album-info h3 {
+    margin-bottom: 0.5em;
+    color: #9c6fb3;
+}
+
+.album-info p {
+    color: #7a6b82;
+    font-size: 0.9em;
+}
+
+.album-actions {
+    margin-top: 0.8em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.album-actions button {
+    background: linear-gradient(135deg, #d6a8f2, #f7b7d9);
+    color: white;
+    border: none;
+    padding: 0.6em 1.2em;
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.album-actions button:hover {
+    background: linear-gradient(135deg, #be90e1, #f291c3);
+}
